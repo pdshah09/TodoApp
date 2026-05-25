@@ -314,22 +314,7 @@ export const ProfileSidebar = () => {
 
         <StyledDivider />
 
-        <MenuLink to="https://github.com/maciekt07/TodoApp">
-          <StyledMenuItem translate="no">
-            <GitHub className="GitHubIcon" /> &nbsp; Github{" "}
-            {stars && (
-              <Tooltip title={`${stars} stars on Github`}>
-                <MenuLabel clr="#ff9d00">
-                  <span>
-                    <StarRounded style={{ fontSize: "18px" }} />
-                    {stars}
-                  </span>
-                </MenuLabel>
-              </Tooltip>
-            )}
-          </StyledMenuItem>
-        </MenuLink>
-
+        
         <MenuLink to="https://github.com/maciekt07/TodoApp/issues/new">
           <StyledMenuItem>
             <BugReportRounded className="BugReportRoundedIcon" /> &nbsp; Report Issue{" "}
