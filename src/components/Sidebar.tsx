@@ -346,23 +346,6 @@ export const ProfileSidebar = () => {
           </StyledMenuItem>
         </MenuLink>
 
-        <MenuLink to="https://www.buymeacoffee.com/maciekt07">
-          <StyledMenuItem className="bmcMenu">
-            <BmcIcon className="bmc-icon" src={theme.darkmode ? bmcLogoLight : bmcLogo} /> &nbsp;
-            Buy me a coffee{" "}
-            {bmcSupporters && (
-              <Tooltip title={`${bmcSupporters} supporters on Buy me a coffee`}>
-                <MenuLabel clr="#f93c58">
-                  <span>
-                    <FavoriteRounded style={{ fontSize: "16px" }} />
-                    {bmcSupporters}
-                  </span>
-                </MenuLabel>
-              </Tooltip>
-            )}
-          </StyledMenuItem>
-        </MenuLink>
-
         <StyledDivider />
 
         {supportsPWA && !isAppInstalled && (

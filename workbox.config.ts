@@ -36,20 +36,20 @@ const workbox: Partial<GenerateSWOptions> = {
       },
     },
     // Cache for Buy Me a Coffee API
-    {
-      urlPattern: /^https:\/\/img\.buymeacoffee\.com\/button-api\/\?&slug=[^&]+$/i,
-      handler: apiCacheStrategy,
-      options: {
-        cacheName: "bmc-html-cache",
-        expiration: {
-          maxEntries: 10,
-          maxAgeSeconds: 2 * 60 * 60, // 2 hours
-        },
-        cacheableResponse: {
-          statuses: [0, 200],
-        },
-      },
-    },
+    // {
+    //   urlPattern: /^https:\/\/img\.buymeacoffee\.com\/button-api\/\?&slug=[^&]+$/i,
+    //   handler: apiCacheStrategy,
+    //   options: {
+    //     cacheName: "bmc-html-cache",
+    //     expiration: {
+    //       maxEntries: 10,
+    //       maxAgeSeconds: 2 * 60 * 60, // 2 hours
+    //     },
+    //     cacheableResponse: {
+    //       statuses: [0, 200],
+    //     },
+    //   },
+    // },
     // Cache for Google Fonts
     // FIXME: On first offline launch after install and precache, fonts don't load (fallback to system font).
     //        After launching the app once online, they load fine offline.
