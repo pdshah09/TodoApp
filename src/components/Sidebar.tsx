@@ -314,24 +314,7 @@ export const ProfileSidebar = () => {
 
         <StyledDivider />
 
-        
-        <MenuLink to="https://github.com/maciekt07/TodoApp/issues/new">
-          <StyledMenuItem>
-            <BugReportRounded className="BugReportRoundedIcon" /> &nbsp; Report Issue{" "}
-            {Boolean(issuesCount || issuesCount === 0) && (
-              <Tooltip title={`${issuesCount} open issues`}>
-                <MenuLabel clr="#3bb61c">
-                  <span>
-                    <AdjustRounded style={{ fontSize: "18px" }} />
-                    {issuesCount}
-                  </span>
-                </MenuLabel>
-              </Tooltip>
-            )}
-          </StyledMenuItem>
-        </MenuLink>
 
-        <StyledDivider />
 
         {supportsPWA && !isAppInstalled && (
           <StyledMenuItem tabIndex={0} onClick={installPWA}>
